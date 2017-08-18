@@ -1,0 +1,4 @@
+---
+- name: take member out of LB
+  debug: msg="take member {{ inventory_hostname }} out of LB"
+  listen: trigger handlers of host behind LB before service changed

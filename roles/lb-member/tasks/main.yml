@@ -1,0 +1,3 @@
+---
+- name: ensure host is in LB
+  debug: msg="host {{ inventory_hostname }} is behind LB"

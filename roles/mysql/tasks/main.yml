@@ -1,0 +1,9 @@
+---
+- name: change config of service
+  command: echo "config changed"
+  notify:
+  - trigger handlers of host behind LB before service changed
+  - restart mysql
+
+- name: run handlers
+  meta: flush_handlers
